@@ -82,9 +82,15 @@ public class CardSystem : Singelton<CardSystem>
         SpendManaGA spendManaGA = new(playCardGA.Card.Mana);
         ActionSystem.Instance.AddReaction(spendManaGA);
 
-        foreach(var effect in playCardGA.Card.Effects)
+        if(playCardGA.Card.ManualTargetEffect != null)
         {
-            PerformEffectGA performEffectGA = new(effect);
+            PerformEffectGA performEffectGA = new(playCardGA.Card.ManualTargetEffect, new() { playCardGA.ManualTarget });
+            ActionSystem.Instance.AddReaction(performEffectGA);
+        }
+        foreach(var effectWrapper in playCardGA.Card.OtherEffects)
+        {
+            List<CombatantView> targets = effectWrapper.TargetMode.GetTargets();
+            PerformEffectGA performEffectGA = new(effectWrapper.Effect, targets);
             ActionSystem.Instance.AddReaction(performEffectGA);
         }
     }

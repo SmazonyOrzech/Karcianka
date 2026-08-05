@@ -12,6 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd747dcfb781ff5459c9a1a19a9625af, type: 3}
   m_Name: DefaultHero
   m_EditorClassIdentifier: Assembly-CSharp::HeroData
-  <Image>k__BackingField: {fileID: 0}
-  <Health>k__BackingField: 0
-  <Deck>k__BackingField: []
+  <Image>k__BackingField: {fileID: 21300000, guid: 8bb8532e75b4ea547b03847ebd4c0e62, type: 3}
+  <Health>k__BackingField: 40
+  <Deck>k__BackingField:
+  - {fileID: 11400000, guid: e27f32c5c3d4acd4cb4810f2a943650a, type: 2}
+  - {fileID: 11400000, guid: e27f32c5c3d4acd4cb4810f2a943650a, type: 2}
+  - {fileID: 11400000, guid: e27f32c5c3d4acd4cb4810f2a943650a, type: 2}
+  - {fileID: 11400000, guid: e27f32c5c3d4acd4cb4810f2a943650a, type: 2}
+  - {fileID: 11400000, guid: e27f32c5c3d4acd4cb4810f2a943650a, type: 2}
+  - {fileID: 11400000, guid: e27f32c5c3d4acd4cb4810f2a943650a, type: 2}
+  - {fileID: 11400000, guid: 25cbb93ead4211747a09bd25e37a160e, type: 2}
+  - {fileID: 11400000, guid: 25cbb93ead4211747a09bd25e37a160e, type: 2}
+  - {fileID: 11400000, guid: 25cbb93ead4211747a09bd25e37a160e, type: 2}
+  - {fileID: 11400000, guid: 4a17f53eba2f31c4bb2c3f6557fe235c, type: 2}
+  - {fileID: 11400000, guid: 4a17f53eba2f31c4bb2c3f6557fe235c, type: 2}
+  - {fileID: 11400000, guid: 4a17f53eba2f31c4bb2c3f6557fe235c, type: 2}
+  - {fileID: 11400000, guid: 4a17f53eba2f31c4bb2c3f6557fe235c, type: 2}
+  - {fileID: 11400000, guid: 4a17f53eba2f31c4bb2c3f6557fe235c, type: 2}
+  - {fileID: 11400000, guid: 4a17f53eba2f31c4bb2c3f6557fe235c, type: 2}
